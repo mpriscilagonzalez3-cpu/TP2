@@ -29,6 +29,7 @@ public class Main extends JFrame {
         txtprice = new JTextField();
         txtstock = new JTextField();
         btnRegistrar = new JButton("Registrar"); // Botón para guardar el producto.
+        btnRegistrar.setBackground(Color.GREEN); // Cambia el color de fondo del botón a verde.
         txtResultado = new JTextArea(); // Área para mostrar resultados.
         txtResultado.setEditable(false); // Evita que el usuario modifique el resultado manualmente.
 
