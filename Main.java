@@ -13,7 +13,7 @@ public class Main extends JFrame {
 
     // Constructor de la ventana principal.
     public Main() {
-        setTitle("Sistema de Productos"); // Establece el título de la ventana.
+        setTitle("Administrador de productos"); // Establece el título de la ventana.
         setSize(700, 250); // Define el ancho y alto de la ventana.
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra la aplicación al cerrar la ventana.*/
         setLocationRelativeTo(null); // Centra la ventana en la pantalla.
