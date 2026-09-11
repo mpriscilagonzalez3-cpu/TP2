@@ -1,46 +1,37 @@
-// ============================================================
-// CLASE PRODUCTO
-// ============================================================
+// La clase Producto representa un producto con sus atributos básicos.
 
-// Esta clase representa un producto del comercio.
 public class Producto {
-
-    // Atributos privados del producto.
+    // Atributos del producto: nombre, precio y stock.
     private String nombre;
     private double precio;
     private int stock;
-    private String categoria;
 
-    // Constructor: permite crear un Producto con sus datos iniciales.
-    public Producto(String nombre, double precio, int stock, String categoria) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
-        this.categoria = categoria;
+    // Constructor: inicializa los valores del producto cuando se crea un objeto.
+    public Producto(String nombre, double precio, int stock) {
+        this.nombre = nombre; // Asigna el nombre recibido al atributo nombre.
+        this.precio = precio; // Asigna el precio recibido al atributo precio.
+        this.stock = stock; // Asigna el stock recibido al atributo stock.
     }
 
-    // Devuelve el nombre del producto.
+    // Método getter para obtener el nombre del producto.
     public String getNombre() {
         return nombre;
     }
 
-    // Devuelve el precio del producto.
+    // Método getter para obtener el precio del producto.
     public double getPrecio() {
         return precio;
     }
 
-    // Devuelve el stock disponible.
+    // Método getter para obtener la cantidad de stock del producto.
     public int getStock() {
         return stock;
     }
 
-    // Devuelve la categoría.
-    public String getCategoria() {
-        return categoria;
-    }
-
-    // Calcula el valor total del stock de este producto.
-    public double getValorStock() {
-        return precio * stock;
+    // Método que devuelve una cadena con los datos del producto formateados.
+    public String mostrarInformacion() {
+        return "Producto: " + nombre +
+               "\nPrecio: $" + precio +
+               "\nStock: " + stock;
     }
 }
